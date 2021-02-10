@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/34813b737f.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/3c399fe18a.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Problem Statement</title>
+</head>
+
+<body>
+
+  <!--  Navbar -->
+  <nav class="navbar navbar-expand-xl navbar-light">
+
+    <a class="navbar-brand" href="#">
+      <img id="menu-image" src="./images/Menu.jpeg" alt="menu bar">
+      <img id="logo-image" src="./images/Logo.jpeg" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class=" nav-link-item" href="#">Menu item 1</a>
+        </li>
+        <li class="nav-item">
+          <a class=" nav-link-item" href="#">Menu item 2</a>
+        </li>
+        <li class="nav-item">
+          <a class=" nav-link-item" href="#">Menu item 3</a>
+        </li>
+        <li class="nav-item">
+          <a class=" nav-link-item" href="#">Menu item 4</a>
+        </li>
+      </ul>
+
+      <form class=" my-2 my-lg-0">
+        <input type="search" class="form-control" placeholder="    Search Here">
+        <span><i class="search-icon fa fa-search" aria-hidden="true"></i></span>
+      </form>
+
+      <div class="user">
+        <svg class="nav-icons" id="avatar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-person" viewBox="0 0 16 16">
+          <path
+            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+        </svg>
+
+      </div>
+
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <!--  alert Message -->
+  <div class="alert alert-success alert-dismissible fade show message" role="alert">
+    You have received 7 problems statements from various administrators.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="clear"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <!--        SideBar               -->
+      <div class="col-md-2 sidebar">
+        <ul class="nav nav-pills nav-stacked flex-column">
+          <li class="nav-item active">
+            <a class="nav-link sidebar-item" href="#"><img class="sidebar-image" src="./images/Search-Icon.jpeg"
+                alt="">Problem
+              Statment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sidebar-item" href="#"><img class="sidebar-image" src="./images/Projects.jpeg"
+                alt="">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sidebar-item" href="#"><img class="sidebar-image" src="./images/Labs.jpeg"
+                alt="">Labs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sidebar-item" href="#"><img class="sidebar-image" src="./images/Assets.jpeg"
+                alt="">Assets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sidebar-item" href="#"><img class="sidebar-image" src="./images/Courses.jpeg"
+                alt="">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sidebar-item" href="#"><i class="fas fa-users sidebar-image"></i>Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sidebar-item" href="#"><i class="fas fa-cogs sidebar-image"></i>Settings</a>
+          </li>
+        </ul>
+      </div>
+      <!--  Heading statement-->
+      <div class="col-md-10">
+        <div>
+          <h2 id="heading">PROBLEM STATEMENT</h2>
+          <!-- sort by Dropdown -->
+          <div class="sort-by">
+            <label for="statement">Sort by</label>
+            <select name="statement" id="statement">
+              <option value="newest">Newest</option>
+              <option value="popular">Popular</option>
+              <option value="high-rated">High Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+        <!-- Blocks -->
+        <div class="flex-container">
+          <div class="flex-item ">
+            <div> <img class="folder-icon" src="./images/Open-Floder.jpeg" alt=""></div>
+            <div class="folder-information">
+              <h1>18</h1>
+              <p>Open</p>
+            </div>
+          </div>
+
+          <div class="flex-item md-12">
+            <div> <img class="folder-icon" src="./images/In-Progress.jpeg" alt=""></div>
+            <div class="folder-information">
+              <h1>12</h1>
+              <p>In-Progress</p>
+            </div>
+          </div>
+
+          <div class="flex-item md-12">
+            <div><img class="folder-icon" src="./images/Closed.jpeg" alt=""></div>
+            <div class="folder-information">
+              <h1>23</h1>
+              <p>Closed</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="clear"></div>
+        <!--              Table Data           -->
+        <div class="content">
+          <div class="table-responsive-lg">
+            <table id="statement-table" class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Created by <i class="fas fa-angle-up up-arrow"></i>
+                    <i class="fas fa-angle-down dpwn-arrow"></i>
+                  </th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Importance</th>
+                  <th scope="col">Due Date</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <!-- Footer Pagination -->
+          <div class="d-flex justify-content-between">
+            <div></div>
+            <div class="pagination-footer">
+              <ul class="pagination d-flex">
+                <li class="page-item">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i
+                      class="fas fa-angle-double-left"></i></a>
+                </li>
+                <li class="page-item active"><a class="page-link-box page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link-box page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link-box page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link-box page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link-box page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link-box page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link-box page-link" href="#">7</a></li>
+                <li class="page-item"><a class="page-link-box page-link" href="#">8</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="page-dropdown">
+              <select name="page" id="page">
+                <option value="10">10/Page</option>
+                <option value="1">1/Page</option>
+                <option value="2">2/Page</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+  <script src="./javascript/script.js"></script>
+
+</body>
+
+</html>

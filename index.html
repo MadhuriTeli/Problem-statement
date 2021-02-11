@@ -26,7 +26,6 @@
 
   <!--  Navbar -->
   <nav class="navbar navbar-expand-xl navbar-light">
-
     <a class="navbar-brand" href="#">
       <img id="menu-image" src="./images/Menu.jpeg" alt="menu bar">
       <img id="logo-image" src="./images/Logo.jpeg" alt="Logo">
@@ -118,7 +117,7 @@
           <!-- sort by Dropdown -->
           <div class="sort-by">
             <label for="statement">Sort by</label>
-            <select name="statement" id="statement">
+            <select class="selecttype" name="statement" id="statement">
               <option value="newest">Newest</option>
               <option value="popular">Popular</option>
               <option value="high-rated">High Rated</option>
@@ -163,13 +162,70 @@
               <thead class="thead-light">
                 <tr>
                   <th scope="col">Title</th>
-                  <th scope="col">Created by <i class="fas fa-angle-up up-arrow"></i>
-                    <i class="fas fa-angle-down dpwn-arrow"></i>
+                  <th scope="col">Created by <span class="flexarrow" style="
+                    position: relative;
+                    top: -3px;
+                    left: 5px;  
+                    opacity: .6;
+                ">
+                      <i class="fas fa-angle-up up-arrow" aria-hidden="true" style="
+    position: relative;"></i>
+                      <i class="fas fa-angle-down dpwn-arrow" aria-hidden="true" style="
+                  position: relative;
+                  top: 7px;
+                  right: 13px;
+              "></i>
+                    </span>
                   </th>
-                  <th scope="col">Category</th>
-                  <th scope="col">Importance</th>
+                  <th scope="col">Category <span class="flexarrow" style="
+                    position: relative;
+                    top: -3px;
+                    left: 5px;  
+                    opacity: .6;
+                ">
+                      <i class="fas fa-angle-up up-arrow" aria-hidden="true" style="
+    position: relative;"></i>
+                      <i class="fas fa-angle-down dpwn-arrow" aria-hidden="true" style="
+                  position: relative;
+                  top: 7px;
+                  right: 13px;
+              "></i>
+                    </span>
+                  </th>
+                  <th scope="col">Importance
+                    <span class="flexarrow" style="
+                    position: relative;
+                    top: -3px;
+                    left: 5px;  
+                    opacity: .6;
+                ">
+                      <i class="fas fa-angle-up up-arrow" aria-hidden="true" style="
+    position: relative;"></i>
+                      <i class="fas fa-angle-down dpwn-arrow" aria-hidden="true" style="
+                  position: relative;
+                  top: 7px;
+                  right: 13px;
+              "></i>
+                    </span>
+                  </th>
                   <th scope="col">Due Date</th>
-                  <th scope="col">Status</th>
+                  <th scope="col">Status
+
+                    <span class="flexarrow" style="
+                    position: relative;
+                    top: -3px;
+                    left: 5px;  
+                    opacity: .6;
+                ">
+                      <i class="fas fa-angle-up up-arrow" aria-hidden="true" style="
+    position: relative;"></i>
+                      <i class="fas fa-angle-down dpwn-arrow" aria-hidden="true" style="
+                  position: relative;
+                  top: 7px;
+                  right: 13px;
+              "></i>
+                    </span>
+                  </th>
                   <th scope="col">Actions</th>
                 </tr>
               <tbody></tbody>
@@ -200,7 +256,7 @@
               </ul>
             </div>
             <div class="page-dropdown">
-              <select name="page" id="page">
+              <select class="selecttype" name="page" id="page">
                 <option value="10">10/Page</option>
                 <option value="1">1/Page</option>
                 <option value="2">2/Page</option>
@@ -212,6 +268,87 @@
       </div>
     </div>
   </div>
+
+  <!-- View  Problem Statment Pop Window -->
+
+  <div id="problemStatement" class="problem-statement">
+
+    <form>
+      <h3 id="headText">View Problem Statement</h3>
+      <div class="mt-4">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" aria-describedby="title">
+      </div>
+
+      <div class="mt-4">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-control heightText" id="Description" aria-describedby="Description">
+      </div>
+
+      <div class="mt-4">
+        <p>Category</p>
+        <p>Public</p>
+      </div>
+
+      <div class="mt-4">
+        <label for="area" class="form-label">Problem Area</label>
+        <input type="text" class="form-control" id="area" aria-describedby="area">
+      </div>
+
+      <div class="mt-4">
+        <label for="importance" class="form-label">Importance</label>
+        <input type="text" class="form-control" id="importance" aria-describedby="importance">
+      </div>
+
+      <div class="mt-4">
+        <label for="date" class="form-label">Target Date</label>
+        <input type="date" class="form-control" id="date" aria-describedby="date">
+      </div>
+
+
+      <div class="mt-4" id="filenamestyle">
+        <label for="file" class="form-label">Attachments</label>
+        <div id="filename" class="pb-5"></div>
+
+      </div>
+
+      <div class="mt-4">
+        <label for="status" class="form-label">Status</label>
+        <select class="form-select form-control" aria-label="Status Select">
+          <option selected value="1">Open</option>
+          <option value="2">Closed</option>
+        </select>
+      </div>
+      <div class="mt-4">
+
+        <label for="Attachment" class="form-label">Attachment</label>
+        <input type="file" id="files" class="form-control" placeholder="Attachment" aria-label="Attachment"
+          aria-describedby="attachment">
+        <button class="btn btn-primary btn-sm" type="menu" id="attachment" style="
+                position: relative;
+                bottom: 34px;
+                margin-right: 24px;
+                float: right;
+                width: 83px;
+                height: 30px;
+                font-size: small;
+                
+                ">Attach</button>
+      </div>
+
+
+      <div class="mt-4">
+        <label for="note" class="form-label">Note</label>
+        <input type="text" class="form-control" id="note" aria-describedby="note">
+      </div>
+
+      <div class="viewFooter">
+        <button type="button" class="btn btn-outline-primary" id="close">Close</button>
+      </div>
+
+    </form>
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

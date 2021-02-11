@@ -180,14 +180,16 @@ $(document).ready(function () {
     $("#problemStatement").show();
   });
 
-  var input = document.getElementById("files");
-  var info = document.getElementById("filename");
+  var input = document.getElementById( 'files' );
+  var output = document.getElementById( 'filename' );
 
-  input.addEventListener("change", displayFileName);
-  function displayFileName(event) {
-    var inputfile = event.srcElement;
-    var fileName = inputfile.files[0].name;
-    console.log(inputfile);
-    info.textContent = "" + fileName + "\n";
+  input.addEventListener( 'change', displayFileName );
+  function displayFileName( event ) {
+
+  output.innerHTML = '<ul>';
+  for (var i = 0; i < input.files.length; ++i) {
+    output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
   }
+  output.innerHTML += '</ul>';
+      }
 });

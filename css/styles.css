@@ -262,7 +262,6 @@ form {
 }
 
 input[type="file"] {
-  width: 100%;
   overflow: hidden;
   box-sizing: border-box;
   background-size: 60px 60px;
@@ -273,10 +272,31 @@ input[type="file"] {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999
 }
 
 #filename {
   position: absolute;
+  display: contents;
+  list-style: none;
+}
+
+#filenamestyle{
+  padding-bottom: 20px;
+}
+
+
+.fileinput{
+  display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .viewFooter {

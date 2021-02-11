@@ -320,11 +320,15 @@
         </select>
       </div>
       <div class="mt-4">
+        <div class="fileinput">
 
-        <label for="Attachment" class="form-label">Attachment</label>
-        <input type="file" id="files" class="form-control" placeholder="Attachment" aria-label="Attachment"
-          aria-describedby="attachment">
-        <button class="btn btn-primary btn-sm" type="menu" id="attachment" style="
+          <label for="Attachment" class="form-label">Attachment</label>
+          <input type="file" id="files" class="form-control" placeholder="Attachment" aria-label="Attachment"
+            aria-describedby="attachment " multiple required>
+          <input type="text" placeholder="Attachment" class="form-control" id="attachmentfile"
+            aria-describedby="attachment">
+
+          <button class="btn btn-primary btn-sm" type="menu" id="attachment" style="
                 position: relative;
                 bottom: 34px;
                 margin-right: 24px;
@@ -334,10 +338,11 @@
                 font-size: small;
                 
                 ">Attach</button>
+        </div>
       </div>
 
 
-      <div class="mt-4">
+      <div class="mt-2">
         <label for="note" class="form-label">Note</label>
         <input type="text" class="form-control" id="note" aria-describedby="note">
       </div>
